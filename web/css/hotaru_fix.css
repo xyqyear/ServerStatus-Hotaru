@@ -1,14 +1,22 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1300px) {
 	.background {
-		background: url(../img/tenshi_1890x400.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi_1890x400.jpg) center center no-repeat;
+		height: 30rem;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.background {
+		background: url(../img/tenshi_1890x400.jpg) center center no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
 @media only screen and (max-width: 992px) {
 	#location, tr td:nth-child(4)		{ display:none; visibility:hidden; }
 	.background {
-		background: url(../img/tenshi_1890x400.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi_1440x450.jpg) center center no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
 @media only screen and (max-width: 720px) {
@@ -16,8 +24,9 @@
 	#location, tr td:nth-child(4)		{ display:none; visibility:hidden; }
 	#uptime, tr td:nth-child(5)			{ display:none; visibility:hidden; }
 	.background {
-		background: url(../img/tenshi.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi.jpg) center -10rem no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -26,8 +35,9 @@
 	#uptime, tr td:nth-child(5)			{ display:none; visibility:hidden; }
 	#load, tr td:nth-child(6)			{ display:none; visibility:hidden; }
 	.background {
-		background: url(../img/tenshi.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi.jpg) center -5rem no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
 @media only screen and (max-width: 533px) {
@@ -37,8 +47,9 @@
 	#traffic, tr td:nth-child(8)		{ display:none; visibility:hidden; }
 	#load, tr td:nth-child(6)			{ display:none; visibility:hidden; }
 	.background {
-		background: url(../img/tenshi.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi.jpg) center top no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
 @media only screen and (max-width: 450px) {
@@ -52,7 +63,8 @@
 	#hdd, tr td:nth-child(11)		{ display:none; visibility:hidden; }
 	#cpu, #ram { min-width: 20px; max-width: 40px; }
 	.background {
-		background: url(../img/tenshi.jpg) no-repeat;
-		background-size: 100%; 
+		background: url(../img/tenshi.jpg) center center no-repeat;
+		background-size: 147%;
+		height: 30rem;
 	}
 }
