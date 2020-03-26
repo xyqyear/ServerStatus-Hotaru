@@ -79,13 +79,10 @@ Download_Server_Status_server(){
 		mv "/tmp/ServerStatus-Hotaru-master/server/sergate" "${server_file}/sergate"
 		mv "/tmp/ServerStatus-Hotaru-master/web" "${web_file}"
 	else
-		if [[ -e "${server_file}/sergate" ]]; then
-			mv "${server_file}/sergate" "${server_file}/sergate1"
-			mv "/tmp/ServerStatus-Hotaru-master/server/sergate" "${server_file}/sergate"
-		else
-			mv "/tmp/ServerStatus-Hotaru-master/server/sergate" "${server_file}/sergate"
-			mv "/tmp/ServerStatus-Hotaru-master/web" "${web_file}"
-		fi
+		rm "${server_file}/sergate"
+		rm -rf "${web_file}"
+		mv "/tmp/ServerStatus-Hotaru-master/server/sergate" "${server_file}/sergate"
+		mv "/tmp/ServerStatus-Hotaru-master/web" "${web_file}"
 	fi
 	if [[ ! -e "${server_file}/sergate" ]]; then
 		echo -e "${Error} ServerStatus 服务端移动重命名失败 !"
